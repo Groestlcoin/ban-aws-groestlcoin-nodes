@@ -1,4 +1,4 @@
-# Ban Bitcoin nodes that are using AWS IP addresses
+# Ban Groestlcoin nodes that are using AWS IP addresses
 Script to ban all Amazon Web Services IP address ranges.
 Protect your node's ressources from VPS nodes.
 
@@ -9,18 +9,18 @@ The list of AWS IP ranges is obtained from http://docs.aws.amazon.com/general/la
 ### Command-line JSON processor jq.
 
 Install on Debian-based Linux
-```` 
+````
 sudo apt-get install jq
-```` 
+````
 
 ## Download and use the script
 
-`git clone https://github.com/iioch/ban-aws-bitcoin-nodes.git`
+`git clone https://github.com/Groestlcoin/ban-aws-groestlcoin-nodes.git`
 
 Run:
 
 ````
-cd ban-aws-bitcoin-nodes   
+cd ban-aws-groestlcoin-nodes   
 chmod u+x ban.sh   
 ./ban.sh
 ````
@@ -28,11 +28,11 @@ chmod u+x ban.sh
 ### To view banned IP addresses:
 
 ````
-bitcoin-cli listbanned
+groestlcoin-cli listbanned
 ````
 
 ### To clear banned IP addresses:
 
 ````
-bitcoin-cli clearbanned
+groestlcoin-cli clearbanned
 ````
